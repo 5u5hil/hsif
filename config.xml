@@ -5,10 +5,6 @@
         version     = "0.0.8" >
 
 <!-- com.infini.timesnetwor0 -->
-  
-    <platform name="winphone" />
-    <platform name="ios" />
-    <platform name="android" />
     <author>Infini Systems Pvt Ltd</author>
     <!-- <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" /> -->
 
@@ -25,6 +21,9 @@
 
     <name>HSIF 2017 India</name>
     <access origin="*" />
+     <platform name="winphone" />
+    <platform name="ios" />
+    <platform name="android" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -36,7 +35,9 @@
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="orientation" value="portrait"/>
   <preference name="windows-appx-target" value="8.1-phone" />
+   <preference name="windows-appx-target" value="8.1-win" />
   <preference name="prerendered-icon" value="true"/>
+
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
