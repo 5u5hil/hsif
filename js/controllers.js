@@ -25,7 +25,11 @@ angular.module('hsif.controllers', [])
 
 $scope.goturlwithpara=function(pg,param){
       var p = parseInt(param);
-   $state.go('app.'+pg,{id:p});
+        if (!$rootScope.fromid) {
+            $state.go('app.login');
+        } else {
+            $state.go('app.'+pg,{id:p});
+        }
 }
 
 
