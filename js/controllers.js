@@ -65,7 +65,7 @@ $scope.goturlwithpara=function(pg,param){
                 $ionicLoading.hide();
                 console.log(response);
                 $scope.homecontent = response;
-                localStorage.setItem('apptitle', response.ctitle);
+                localStorage.setItem('apptitle', response.page_data.ctitle);
 
             })
 
