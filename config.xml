@@ -22,17 +22,14 @@
     <!-- Windows Phone 8.1: -->
     <preference name="windows-appx-target" value="8.1-phone" />
     <description>
-        Hitachi Social Innovation forum 2016
+        Hitachi Social Innovation forum 2017
     </description>
 
-
-
-    <name>HSIF 2016 India</name>
-
-    <icon src="icon.png" />
-    <splash src="splash.png" />
+    <name>HSIF 2017 India</name>
 
     <access origin="*" />
+    <icon src="icon.png" />
+    <splash src="splash.png" />
     <plugin name="cordova-plugin-console" spec="1.0.3" />
     <plugin name="cordova-plugin-device" spec="1.1.2" />
     <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
