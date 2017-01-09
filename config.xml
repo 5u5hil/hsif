@@ -29,6 +29,9 @@
 
     <name>HSIF 2016 India</name>
 
+    <icon src="icon.png" />
+    <splash src="splash.png" />
+
     <access origin="*" />
     <plugin name="cordova-plugin-console" spec="1.0.3" />
     <plugin name="cordova-plugin-device" spec="1.1.2" />
