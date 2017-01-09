@@ -7,7 +7,7 @@
 <!-- com.infini.timesnetwor0 -->
     <preference name="phonegap-version" value="cli-6.0.0" />
  
-    <preference name="fullscreen" value="true" /> 
+   
     <!-- versionCode is optional and Android only -->
     <platform name="winphone" />
     <platform name="ios" />
