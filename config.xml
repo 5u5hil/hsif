@@ -27,9 +27,13 @@
 
     <name>HSIF 2017 India</name>
 
-    <access origin="*" />
+    
     <icon src="icon.png" />
     <splash src="splash.png" />
+
+    <icon src="icon.png" platform="winphone" />
+    <icon src="splash.png" platform="winphone" role="background" />
+
     <plugin name="cordova-plugin-console" spec="1.0.3" />
     <plugin name="cordova-plugin-device" spec="1.1.2" />
     <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
@@ -107,7 +111,7 @@
     <splash src="resources\ios\splash\Default@2x~iphone.png" width="640" height="960"/>
     <splash src="resources\ios\splash\Default~iphone.png" width="320" height="480"/>
   </platform>
-
+    <access origin="*" />
 
 
 </widget>
