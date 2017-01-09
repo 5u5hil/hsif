@@ -12,21 +12,7 @@
     <platform name="android" />
     <author>Infini Systems Pvt Ltd</author>
     <!-- <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" /> -->
-
-    <!-- Windows 8.1: -->
-    <!-- Windows 10 (default): -->
-    <!--    <preference name="windows-appx-target" value="uap" />
-     Windows 8.1: 
-    <preference name="windows-appx-target" value="8.1-win" />-->
-    <!-- Windows Phone 8.1: -->
-    <preference name="windows-appx-target" value="8.1-phone" />
-    <description>
-        Hitachi Social Innovation forum 2017
-    </description>
-
-    <name>HSIF 2017 India</name>
-
-     <preference name="webviewbounce" value="false"/>
+    <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="SplashScreenDelay" value="2000"/>
@@ -43,11 +29,19 @@
 <icon src="icon.png"  gap:role="default" />
 
 
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> parent of 85672f8... ui
+    <!-- Windows 8.1: -->
+    <!-- Windows 10 (default): -->
+    <!--    <preference name="windows-appx-target" value="uap" />
+     Windows 8.1: 
+    <preference name="windows-appx-target" value="8.1-win" />-->
+    <!-- Windows Phone 8.1: -->
+    <preference name="windows-appx-target" value="8.1-phone" />
+    <description>
+        Hitachi Social Innovation forum 2017
+    </description>
+
+    <name>HSIF 2017 India</name>
     <access origin="*" />
     
     <icon src="icon.png" />
