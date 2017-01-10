@@ -33,6 +33,8 @@ angular.module('hsif', ['ionic', 'hsif.controllers','ngRoute','hsif.ratings'])
 
 
   $ionicPlatform.ready(function() {
+
+
    if (typeof analytics !== 'undefined') {
    // console.log('36');
      analytics.startTrackerWithId("UA-52669715-45");
@@ -73,9 +75,8 @@ var notificationOpenedCallback = function(result) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-
-
-
+    StatusBar.overlaysWebView(false)
+    
   });
 
 

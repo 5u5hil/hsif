@@ -14,8 +14,8 @@
     <!-- <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" /> -->
   <preference name="SplashScreen" value="screen"/>
   <preference name="orientation" value="portrait"/>
-
-<icon src="icon.png"  gap:role="default" />
+  <preference name="StatusBarOverlaysWebView" value="false"/>
+  <icon src="icon.png"  gap:role="default" />
 
 
 
