@@ -82,6 +82,7 @@ $scope.goturlwithpara=function(pg,param){
             $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=405&cat_id=2')
         .success(function(response) {
             $ionicLoading.hide();
+            $scope.responsesession = response;
             $scope.pagehead = response.page_data.title;
             $scope.topheader=response.page_data.heading_title;
              console.log(response)
@@ -106,6 +107,7 @@ $scope.goturlwithpara=function(pg,param){
  $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=414&cat_id=4')
         .success(function(response) {
             $ionicLoading.hide();
+            $scope.responsespeakers=response;
             $scope.pagehead = response.page_data.title;
             $scope.topheader=response.page_data.heading_title;
              console.log(response)
@@ -430,6 +432,7 @@ $scope.goturlwithpara=function(pg,param){
     $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=433&cat_id=5')
         .success(function(response) {
             $ionicLoading.hide();
+            $scope.responsetriva=response;
             $scope.pagehead = response.page_data.title;
             $scope.topheader=response.page_data.heading_title;
              console.log(response)

@@ -31,8 +31,10 @@
     </description>
 
     <name>HSIF 2017 India</name>
-    <access origin="*" />
     
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <access origin="*" />
     <icon src="icon.png" />
     <splash src="splash.png" />
 
@@ -49,7 +51,6 @@
     <plugin name="cordova-plugin-statusbar" spec="2.1.3" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="cordova-plugin-x-toast" spec="2.5.2" />
-
 
 
     <icon platform="winphone" width="30"  height="30"  src="res/Square30x30Logo.scale-100.png" />
