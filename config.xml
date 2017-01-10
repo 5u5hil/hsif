@@ -3,7 +3,6 @@
         id          = "com.infini.timesnetwor0"
         versionCode = "10"
         version     = "1.0.2" >
-
 <!-- com.infini.timesnetwor0 -->
     <preference name="phonegap-version" value="cli-6.0.0" />
     <!-- versionCode is optional and Android only -->
@@ -67,12 +66,7 @@
     <splash platform="winphone" width="1152" height="1920" src="res/SplashScreenPhone.scale-240.png" />
     <splash platform="winphone" width="620"  height="300"  src="res/SplashScreen.scale-100.png" />
 
-
-<platform name="windows">
-    <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screen/windows/splashscreen.png" width="620" height="300"/>
-    <splash src="res/screen/windows/splashscreenphone.png" width="1152" height="1920"/>
-</platform>
+    <splash src="splash.png" platform="winphone" />
 
 
 
