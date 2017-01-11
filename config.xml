@@ -3,6 +3,9 @@
         id          = "com.infini.timesnetwor0"
         versionCode = "10"
         version     = "1.0.2" >
+        <!-- iOS -->
+<widget CFBundleVersion="2"></widget>
+
 <!-- com.infini.timesnetwor0 -->
     <preference name="phonegap-version" value="cli-6.0.0" />
     <!-- versionCode is optional and Android only -->
