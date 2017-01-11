@@ -5,7 +5,10 @@ angular.module('hsif.controllers', [])
     $rootScope.fromid = localStorage.getItem("userId");
     $rootScope.loginuserv = JSON.parse(localStorage.getItem("loginuser"));
     $rootScope.apptitle=localStorage.getItem("apptitle");
-
+	   if($rootScope.apptitle=='undefined'){
+        $rootScope.apptitle='HSIF';
+    }
+	
     $rootScope.checkuserlogin = function(ab) {
         console.log($rootScope.fromid);
         if (!$rootScope.fromid) {
