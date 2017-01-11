@@ -290,7 +290,6 @@ $scope.goturlwithpara=function(pg,param){
                     //console.log(response);
             })
     }
-
     $scope.ratingsObject = {
         iconOn: 'ion-ios-star', //Optional
         iconOff: 'ion-ios-star-outline', //Optional
@@ -303,12 +302,10 @@ $scope.goturlwithpara=function(pg,param){
             $scope.ratingsCallback(rating, index);
         }
     };
-
     $scope.ratingsCallback = function(rating, index) {
         //console.log('Selected rating is : ', rating, ' and index is ', index);
         $scope.fdata.rate = rating;
     };
-
     $scope.reloadresult = function() {
         $state.go($state.current, {}, { reload: true });
     }
@@ -326,10 +323,7 @@ $scope.goturlwithpara=function(pg,param){
                 $http.get('http://times-hitachi.cruxservers.in/api/?method=getPolls&userId=' + $scope.fromid)
                     .success(function(response) {
                         $scope.polld = response;
-                        // console.log($scope.polld);
-                        
-                         if($scope.polld.length<1){
-
+                         if($scope.polld.length<=1){
                             $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=312').success(function(response){
                                // console.log(response);
                                 $scope.fdata.session = response.page_data.session_pname;
@@ -592,11 +586,10 @@ $scope.goturlwithpara=function(pg,param){
 
     $scope.loginaction = function(lg) {
         $ionicLoading.show({ template: 'Loading...' });
-
         $http({
             method: 'POST',
             url: 'http://times-hitachi.cruxservers.in/api/?method=checkLogin&useremail=' + lg.username + '&password=' + lg.password + '&device_id=' + $rootScope.plyerid
-        }).success(function(response) {
+        }).then(function(response) {
             $ionicLoading.hide();
             console.log(response);
             if (response != false) {
@@ -610,13 +603,14 @@ $scope.goturlwithpara=function(pg,param){
                 // $scope.$apply();
                 // $window.location.reload(true);
 
-
             } else {
-
+				$ionicLoading.hide();
                 $scope.loginerror = true;
             }
-
-        })
+        },function errorCallback(response) {
+             $ionicLoading.hide();
+			$scope.loginerror = true;
+  })
     }
 
     $scope.gotopage = function() {
