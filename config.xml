@@ -10,7 +10,7 @@
     <platform name="ios" />
     <platform name="android" />
     <author>Infini Systems Pvt Ltd</author>
-    <!-- <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" /> -->
+    <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="orientation" value="portrait"/>
   <preference name="StatusBarOverlaysWebView" value="false"/>
