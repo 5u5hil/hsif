@@ -318,7 +318,7 @@ $scope.goturlwithpara=function(pg,param){
            // console.log(response);
              
            // console.log($scope.ftsession);
-            $scope.pollstatus = response.status
+            $scope.pollstatus = response.page_data.status
             if ($scope.pollstatus == 'true') {
                 $scope.fstatus=false;
                 $scope.pollstatic = false;
@@ -332,9 +332,9 @@ $scope.goturlwithpara=function(pg,param){
 
                             $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=312').success(function(response){
                                // console.log(response);
-                                $scope.fdata.session = response.session_pname;
+                                $scope.fdata.session = response.page_data.session_pname;
                                 $scope.datafeedbak=response;
-                                if(response.status=='true'){
+                                if(response.page_data.status=='true'){
                                     $scope.fstatus=true;     
                                 } else{ 
                                     $scope.fstatus=false;
