@@ -1,8 +1,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.infini.timesnetwor0"
+        id          = "com.infini.timesnetwork"
         versionCode = "10"
-        version     = "1.0.4" >
+        version     = "1.0.5" >
         <!-- iOS -->
 <widget CFBundleVersion="2"></widget>
 
