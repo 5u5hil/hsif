@@ -21,6 +21,8 @@
   <preference name="orientation" value="landscape" />
   <preference name="fullscreen" value="true" />
   <preference name="StatusBarOverlaysWebView" value="false"/>
+  <preference name="prerendered-icon" value="true"/>
+
   <icon src="icon.png"  gap:role="default" />
 
 
@@ -79,6 +81,7 @@
 
 
 <platform name="android">
+    <icon src="icon.png" />
     <icon src="resources\android\icon\drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources\android\icon\drawable-mdpi-icon.png" density="mdpi"/>
     <icon src="resources\android\icon\drawable-hdpi-icon.png" density="hdpi"/>
