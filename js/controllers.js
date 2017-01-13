@@ -543,7 +543,10 @@ $scope.goturlwithpara=function(pg,param){
             $timeout(function() {
                 appbrowserlink();
             }, 1000);
+
         })
+
+
 
 })
 
