@@ -1,6 +1,6 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.infini.timesnetwor0"
+        id          = "com.infini.timesnetwork"
         versionCode = "10"
         version     = "1.0.4" >
         <!-- iOS -->
@@ -34,6 +34,7 @@
 
     <name>HSIF 2017 India</name>
     
+     <icon src="icon.png" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
@@ -50,7 +51,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="cordova-plugin-x-toast" spec="2.5.2" />
     <icon src="icon.png"  platform="winphone"  />
-     <icon src="icon.png" />
+    
     <splash src="splash.png" />
     <icon platform="winphone" width="30"  height="30"  src="res/Square30x30Logo.scale-100.png" />
     <icon platform="winphone" width="44"  height="44"  src="res/Square44x44Logo.scale-100.png" />
@@ -65,9 +66,9 @@
     <icon platform="winphone" width="360" height="360" src="res/Square150x150Logo.scale-240.png" />
     <icon platform="winphone" width="310" height="150" src="res/Wide310x150Logo.scale-100.png" />
     <icon platform="winphone" width="744" height="360" src="res/Wide310x150Logo.scale-240.png" />
-
-    <splash platform="winphone" width="1152" height="1920" src="res/SplashScreenPhone.scale-240.png" />
     <splash platform="winphone" width="620"  height="300"  src="res/SplashScreen.scale-100.png" />
+    <splash platform="winphone" width="1152" height="1920" src="res/SplashScreenPhone.scale-240.png" />
+  
 
     <splash src="splash.png" platform="winphone" />
 
