@@ -1,22 +1,25 @@
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.infini.timesnetwor0"
-        versionCode = "10"
-        version     = "1.0.4" >
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.infini.timesnetwor0" versionCode = "10" version="1.0.4" >
+    <description>
+        Hitachi Social Innovation forum 2017
+    </description>
+    <name>HSIF 2017 India</name>
         <!-- iOS -->
 <widget CFBundleVersion="2"></widget>
+
+<!-- com.infini.timesnetwor0 -->
+    <preference name="phonegap-version" value="cli-6.0.0" />
     <!-- versionCode is optional and Android only -->
-    <platform name="winphone" />
     <platform name="ios" />
     <platform name="android" />
     <author>Infini Systems Pvt Ltd</author>
-
-
-
-<!-- <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
+    <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
   <preference name="SplashScreen" value="screen"/>
-  <preference name="orientation" value="portrait"/> -->
-  <!-- all platforms -->
+  <preference name="orientation" value="portrait"/>
+  <preference name="StatusBarOverlaysWebView" value="false"/>
+  <icon src="icon.png"  />
+
+
 
     <!-- Windows 8.1: -->
     <!-- Windows 10 (default): -->
@@ -24,20 +27,9 @@
      Windows 8.1: 
     <preference name="windows-appx-target" value="8.1-win" />-->
     <!-- Windows Phone 8.1: -->
- 
-    <description>
-        Hitachi Social Innovation forum 2017
-    </description>
+   <!--  <preference name="windows-appx-target" value="8.1-phone" /> -->
 
-    <name>HSIF 2017 India</name>
     
-      <preference name="phonegap-version" value="cli-6.0.0" />
-  <preference name="orientation" value="landscape" />
-  <preference name="fullscreen" value="true" />
-  <preference name="StatusBarOverlaysWebView" value="false"/>
-  <preference name="prerendered-icon" value="true"/>
-
-     <icon src="icon.png" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
@@ -53,32 +45,12 @@
     <plugin name="cordova-plugin-statusbar" spec="2.1.3" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="cordova-plugin-x-toast" spec="2.5.2" />
-    <icon src="icon.png"  platform="winphone"  />
-    
-    <splash src="splash.png" />
-    <icon platform="winphone" width="30"  height="30"  src="res/Square30x30Logo.scale-100.png" />
-    <icon platform="winphone" width="44"  height="44"  src="res/Square44x44Logo.scale-100.png" />
-    <icon platform="winphone" width="50"  height="50"  src="res/StoreLogo.scale-100.png" />
-    <icon platform="winphone" width="70"  height="70"  src="res/Square70x70Logo.scale-100.png" />
-    <icon platform="winphone" width="71"  height="71"  src="res/Square71x71Logo.scale-100.png" />
-    <icon platform="winphone" width="106" height="106" src="res/Square44x44Logo.scale-240.png" />
-    <icon platform="winphone" width="120" height="120" src="res/StoreLogo.scale-240.png" />
-    <icon platform="winphone" width="150" height="150" src="res/Square150x150Logo.scale-100.png" />
-    <icon platform="winphone" width="170" height="170" src="res/Square71x71Logo.scale-240.png" />
-    <icon platform="winphone" width="310" height="310" src="res/Square310x310Logo.scale-100.png" />
-    <icon platform="winphone" width="360" height="360" src="res/Square150x150Logo.scale-240.png" />
-    <icon platform="winphone" width="310" height="150" src="res/Wide310x150Logo.scale-100.png" />
-    <icon platform="winphone" width="744" height="360" src="res/Wide310x150Logo.scale-240.png" />
-    <splash platform="winphone" width="620"  height="300"  src="res/SplashScreen.scale-100.png" />
-    <splash platform="winphone" width="1152" height="1920" src="res/SplashScreenPhone.scale-240.png" />
   
 
-    <splash src="splash.png" platform="winphone" />
 
 
 
 <platform name="android">
-    <icon src="icon.png" />
     <icon src="resources\android\icon\drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources\android\icon\drawable-mdpi-icon.png" density="mdpi"/>
     <icon src="resources\android\icon\drawable-hdpi-icon.png" density="hdpi"/>
