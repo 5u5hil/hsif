@@ -539,13 +539,11 @@ $scope.goturlwithpara=function(pg,param){
             // console.log(response);
             $ionicLoading.hide();
             $scope.triviItlatest = response;
+            console.log(response);
             $timeout(function() {
                 appbrowserlink();
             }, 1000);
-
         })
-
-
 
 })
 
@@ -596,7 +594,7 @@ $scope.goturlwithpara=function(pg,param){
             $ionicLoading.hide();
             console.log(response);
             if (response != false) {
-                $scope.ldata = response.usersdata.data;
+                $scope.ldata = response.data.usersdata.data;
                     console.log($scope.ldata);
                 localStorage.setItem('userId', $scope.ldata.ID);
                 localStorage.setItem('loginuser', angular.toJson($scope.ldata));
