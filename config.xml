@@ -17,15 +17,6 @@
   <preference name="SplashScreen" value="screen"/>
   <preference name="orientation" value="portrait"/> -->
   <!-- all platforms -->
-  <preference name="phonegap-version" value="cli-6.0.0" />
-  <preference name="orientation" value="landscape" />
-  <preference name="fullscreen" value="true" />
-  <preference name="StatusBarOverlaysWebView" value="false"/>
-  <preference name="prerendered-icon" value="true"/>
-
-  <icon src="icon.png"  gap:role="default" />
-
-
 
     <!-- Windows 8.1: -->
     <!-- Windows 10 (default): -->
@@ -33,13 +24,19 @@
      Windows 8.1: 
     <preference name="windows-appx-target" value="8.1-win" />-->
     <!-- Windows Phone 8.1: -->
-    <preference name="windows-appx-target" value="8.1-phone" />
+ 
     <description>
         Hitachi Social Innovation forum 2017
     </description>
 
     <name>HSIF 2017 India</name>
     
+      <preference name="phonegap-version" value="cli-6.0.0" />
+  <preference name="orientation" value="landscape" />
+  <preference name="fullscreen" value="true" />
+  <preference name="StatusBarOverlaysWebView" value="false"/>
+  <preference name="prerendered-icon" value="true"/>
+
      <icon src="icon.png" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
