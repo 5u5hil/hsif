@@ -1,7 +1,6 @@
 angular.module('hsif.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $http, $ionicLoading, $ionicHistory, $timeout, $rootScope, $state, $filter) {
-
     $rootScope.fromid = localStorage.getItem("userId");
     $rootScope.loginuserv = JSON.parse(localStorage.getItem("loginuser"));
     $rootScope.apptitle=localStorage.getItem("apptitle");
@@ -60,14 +59,13 @@ $scope.goturlwithpara=function(pg,param){
 
 
 .controller('homeCtrl', function($scope, $state, $ionicNavBarDelegate, $ionicLoading, $http) {
-
-
         $scope.$on('$ionicView.enter', function(e) {
             $ionicNavBarDelegate.showBar(true);
+            $rootScope.loginuserv = JSON.parse(localStorage.getItem("loginuser"));
         });
 
         $ionicLoading.show({ template: 'Loading...' });
-        $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=220')
+        $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=220&userId=' + $scope.fromid)
             .success(function(response) {
                 $ionicLoading.hide();
                 console.log(response);
@@ -82,7 +80,7 @@ $scope.goturlwithpara=function(pg,param){
     })
     .controller('sessionsCtrl', function($scope,$http,$ionicLoading) {
 
-            $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=405&cat_id=2')
+            $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=405&cat_id=2&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             $scope.responsesession = response;
@@ -107,7 +105,7 @@ $scope.goturlwithpara=function(pg,param){
 
 .controller('speakersCtrl',  function($scope,$http,$ionicLoading) {
 
- $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=414&cat_id=4')
+ $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=414&cat_id=4&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             $scope.responsespeakers=response;
@@ -250,7 +248,7 @@ $scope.goturlwithpara=function(pg,param){
 
 
     $ionicLoading.show({ template: 'Loading...' });
-    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=189')
+    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=189&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             // $scope.triviaRailway=response.content;
@@ -413,7 +411,7 @@ $scope.goturlwithpara=function(pg,param){
 
 .controller('timesnetworkCtrl', ['$scope', '$ionicLoading', '$http', function($scope, $ionicLoading, $http) {
     $ionicLoading.show({ template: 'Loading...' });
-    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=208')
+    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=208&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             // $scope.triviaRailway=response.content;
@@ -426,7 +424,7 @@ $scope.goturlwithpara=function(pg,param){
 
 
 .controller('triviaCtrl', function($scope, $http,$ionicLoading) {
-    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=433&cat_id=5')
+    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=433&cat_id=5&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             $scope.responsetriva=response;
@@ -434,7 +432,6 @@ $scope.goturlwithpara=function(pg,param){
             $scope.topheader=response.page_data.heading_title;
              console.log(response)
             $scope.sdata=response.menupage;
-            
             $scope.activebtn = $scope.sdata[0].post_title;
         })
 
@@ -719,11 +716,8 @@ $scope.goturlwithpara=function(pg,param){
         .success(function(response) {
             $ionicLoading.hide();
             $scope.qtext = response;
-
             console.log(response);
         })
-
-
 
     $scope.sendemail = function(qry) {
         $ionicLoading.show({ template: 'Loading...' });
@@ -754,7 +748,7 @@ $scope.goturlwithpara=function(pg,param){
 .controller('contactCtrl', ['$scope', '$ionicLoading', '$sce', '$http', function($scope, $ionicLoading, $sce, $http) {
 
     $ionicLoading.show({ template: 'Loading...' });
-    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=211')
+    $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=211&userId='+$scope.fromid)
         .success(function(response) {
             $ionicLoading.hide();
             $scope.contactdata = response;
@@ -851,9 +845,6 @@ $scope.goturlwithpara=function(pg,param){
                 $ionicScrollDelegate.scrollBottom(true);
             })
     }
-
-
-
 
     $scope.doRefresh = function() {
         $window.location.reload(true)

@@ -5,12 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 angular.module('hsif', ['ionic', 'hsif.controllers','ngRoute','hsif.ratings'])
-
 .run(function($ionicPlatform,$rootScope,$state,$ionicLoading,$ionicHistory) {
-
-
-
-
  $ionicPlatform.registerBackButtonAction(function(e){
     if ($rootScope.backButtonPressedOnceToExit) {
       ionic.Platform.exitApp();
@@ -281,7 +276,5 @@ $stateProvider
       }
     }
   })
-
-
   $urlRouterProvider.otherwise('/app/home');
 });
