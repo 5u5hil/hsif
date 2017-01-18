@@ -2,7 +2,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.infini.timesnetwork"
         versionCode = "10"
-        version     = "1.0.7" >
+        version     = "1.0.6" >
         <!-- iOS -->
 <widget CFBundleVersion="2"></widget>
 <!-- com.infini.timesnetwor0 -->
