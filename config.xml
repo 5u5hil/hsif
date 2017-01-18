@@ -2,17 +2,18 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.infini.timesnetwork"
         versionCode = "10"
-        version     = "1.0.6" >
+        version     = "1.0.7" >
         <!-- iOS -->
 <widget CFBundleVersion="2"></widget>
 <!-- com.infini.timesnetwor0 -->
     <preference name="phonegap-version" value="cli-6.0.0" />
+        <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
     <!-- versionCode is optional and Android only -->
     <platform name="winphone" />
     <platform name="ios" />
     <platform name="android" />
     <author>Infini Systems Pvt Ltd</author>
-    <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
+
   <preference name="SplashScreen" value="screen"/>
   <preference name="orientation" value="portrait"/>
   <preference name="StatusBarOverlaysWebView" value="true"/>
