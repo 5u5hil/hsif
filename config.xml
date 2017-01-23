@@ -1,6 +1,6 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.infini.timesnetwork"
+        id          = "com.infini.timesnetwor0"
         versionCode = "10"
         version     = "1.0.6" >
         <!-- iOS -->
@@ -25,6 +25,7 @@
     <preference name="windows-appx-target" value="8.1-win" />-->
     <!-- Windows Phone 8.1: -->
     <preference name="windows-appx-target" value="8.1-phone" />
+    
     <description>
         Hitachi Social Innovation forum 2017
     </description>
