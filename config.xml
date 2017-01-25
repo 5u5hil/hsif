@@ -51,7 +51,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="1" />
     <plugin name="cordova-plugin-network-information" spec="1" />
     <plugin name="onesignal-cordova-plugin" spec="1" />
-    <plugin name="cordova-plugin-winstore-jscompat" spec="1" />
+    <plugin name="cordova-plugin-winstore-jscompat" spec="https://github.com/Microsoft/winstore-jscompat.git" source="git"/>
 
 
     <icon src="icon.png"  platform="winphone"  />
