@@ -4,10 +4,10 @@ angular.module('hsif.controllers', [])
     $rootScope.fromid = localStorage.getItem("userId");
     $rootScope.loginuserv = JSON.parse(localStorage.getItem("loginuser"));
     $rootScope.apptitle=localStorage.getItem("apptitle");
-	   if($rootScope.apptitle=='undefined'){
+       if($rootScope.apptitle=='undefined'){
         $rootScope.apptitle='HSIF';
     }
-	
+    
     $rootScope.checkuserlogin = function(ab) {
         console.log($rootScope.fromid);
         if (!$rootScope.fromid) {
@@ -58,7 +58,7 @@ $scope.goturlwithpara=function(pg,param){
 })
 
 
-.controller('homeCtrl', function($scope, $state, $ionicNavBarDelegate, $ionicLoading, $http) {
+.controller('homeCtrl', function($scope,$rootScope, $state, $ionicNavBarDelegate, $ionicLoading, $http) {
         $scope.$on('$ionicView.enter', function(e) {
             $ionicNavBarDelegate.showBar(true);
             $rootScope.loginuserv = JSON.parse(localStorage.getItem("loginuser"));
@@ -605,12 +605,12 @@ $scope.goturlwithpara=function(pg,param){
                 // $window.location.reload(true);
 
             } else {
-				$ionicLoading.hide();
+                $ionicLoading.hide();
                 $scope.loginerror = true;
             }
         },function errorCallback(response) {
              $ionicLoading.hide();
-			$scope.loginerror = true;
+            $scope.loginerror = true;
   })
     }
 
@@ -833,11 +833,7 @@ $scope.goturlwithpara=function(pg,param){
     $scope.data = {};
     $scope.myId = $scope.fromid;
     $scope.messages = [];
-
-
     /*previous chat */
-
-
     $scope.getnmessage = function() {
         $http.get('http://times-hitachi.cruxservers.in/api/?method=getChatMsgs&from=' + $scope.fromid + '&to=' + $scope.toId)
             .then(function(response) {
@@ -845,19 +841,15 @@ $scope.goturlwithpara=function(pg,param){
                 $ionicScrollDelegate.scrollBottom(true);
             })
     }
-
     $scope.doRefresh = function() {
         $window.location.reload(true)
         $ionicScrollDelegate.scrollBottom(true);
     }
-
     $http.get('http://times-hitachi.cruxservers.in/api/?method=getUser&id=' + $scope.toId)
         .success(function(response) {
             $scope.fuser = response.data;
         })
 })
-
-
 
 .controller('inractiveCtrl', function($scope, $http, $stateParams, $timeout, $window, $ionicScrollDelegate, $filter) {
 
