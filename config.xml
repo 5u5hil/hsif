@@ -6,9 +6,11 @@
     <!-- iOS -->
     <widget CFBundleVersion="2"></widget>
     <!-- com.infini.timesnetwor0 -->
+    <preference name="windows-appx-target" value="8.1-phone" />
     <preference name="windows-identity-name" value="InfiniSystemsPvtLtd.HSIF2016India" />
     <!-- versionCode is optional and Android only -->
     <platform name="winphone" />
+
     <author>Infini Systems Pvt Ltd</author>
 
     <preference name="SplashScreen" value="screen"/>
