@@ -261,6 +261,10 @@ $scope.goturlwithpara=function(pg,param){
 
     $scope.$on('$ionicView.enter', function(e) {
         $ionicNavBarDelegate.showBar(true);
+        jQuery('.triviatexr .row .col:nth-child(2) span').unwrap();
+        jQuery('.triviatexr .row .col:nth-child(2)').addClass('marquee');
+      
+
     });
 
     $scope.uinfo = angular.fromJson(localStorage.getItem('loginuser'));
@@ -324,6 +328,7 @@ $scope.goturlwithpara=function(pg,param){
                 $http.get('http://times-hitachi.cruxservers.in/api/?method=getPolls&userId=' + $scope.fromid)
                     .success(function(response) {
                         $scope.polld = response;
+                        console.log(response);
                          if($scope.polld.length<=1){
                             $http.get('http://times-hitachi.cruxservers.in/api/?method=getPage&id=312').success(function(response){
                                // console.log(response);

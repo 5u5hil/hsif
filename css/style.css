@@ -210,7 +210,10 @@ marquee p{display: inline-block; font-size: 14px; margin:0; padding:0;}
 .sessioname{    font-size: 14px;
     font-weight: normal;}
 .button{border-radius: 0;}
-.pollscore{position: absolute; right: 0; font-size: 15px; background: #eee; padding: 4px; top: 5px; z-index: 9999;}
+.pollscore{position: absolute; right: 0; font-size: 15px; background: #eee; padding: 4px 15px 4px 4px; top: 5px; z-index: 9999;}
+.pollscore:before{content: '%'; display: block; position: absolute; right: 0; padding: 0 3px;}
+
+
 
 .card .item{position: relative;}
 .overlay{    background: rgba(0,0,0,0);
@@ -462,6 +465,27 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 .marquee:hover {
   animation-play-state: paused
 }
+
+
+
+
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
+}
+.marquee p{display: inline;}
+.marquee:hover {
+  animation-play-state: paused
+}
+
+
+
+
+
 
 /* Make it move */
 @keyframes marquee {
